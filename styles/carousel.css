@@ -111,7 +111,7 @@
 
 .carousel-container .thumbnails {
   position: absolute;
-  bottom: 10px; /* Ajustez la valeur selon votre besoin */
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;

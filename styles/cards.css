@@ -10,7 +10,7 @@
 
 .card {
   position: relative;
-  /* Autres styles... */
+
 }
 
 .card .short-text {
@@ -102,7 +102,7 @@ h2 {
 }
 
 .card.expanded .overlay-content p {
-  max-height: 400px; /* Ajustez cette valeur en fonction de vos besoins */
+  max-height: 400px; 
   overflow-y: auto;
 }
 

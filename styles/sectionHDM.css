@@ -1,0 +1,78 @@
+/* Section HDM Network */
+#hdm-network {
+    min-height: 400px;
+    background-color: #2979ff;
+    color: #ffffff;
+    padding:  0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #hdm-network.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  #hdm-network .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #hdm-network h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  #hdm-network p {
+    font-size: 24px;
+    line-height: 1.6;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Animation d'apparition de la section */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation du fond */
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 50% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  #hdm-network {
+    background-image: linear-gradient(to right, #2979ff, #ffffff, #2979ff);
+    background-size: 300% 100%;
+    animation: backgroundAnimation 5s infinite;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    #hdm-network {
+      animation-delay: 0.5s;
+      animation-fill-mode: both;
+    }
+  }
+  
+  #hdm-network.show {
+    opacity: 1;
+  }
+  
+  

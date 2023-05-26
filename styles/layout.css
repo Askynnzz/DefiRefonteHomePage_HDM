@@ -1,0 +1,299 @@
+/* Style de base */
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+nav {
+  background-color: #3498db;
+  opacity: 0.8;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar {
+  background: linear-gradient(to bottom, #3a5bff, #ffffff);
+  border-radius: 10px;
+}
+
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.navbar-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Centrer les boutons de la navbar */
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Augmenter la taille de la police */
+.navbar-menu li a {
+  font-size: 18px;
+}
+
+.navbar-logo {
+  max-height: 150px; /* Ajustez la valeur selon vos besoins */
+}
+
+.navbar-item:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.navbar-icon {
+  width: 16px;
+  height: 16px;
+}
+
+
+
+/* Ajoutez ces styles pour le dropdown menu */
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  margin-bottom: 5px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.login-form {
+  display: none;
+}
+
+.login-form.show {
+  display: block;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  animation: slideInRight 1s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.carousel h2,
+.carousel p {
+  margin: 0;
+}
+
+
+
+
+
+/* Footer */
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-policy p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.footer-policy a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Formulaire d'inscription à la newsletter */
+#newsletter {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#newsletter h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter input[type="email"] {
+  width: 300px;
+  height: 40px;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+}
+
+#newsletter button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#newsletter button:hover {
+  background-color: #2980b9;
+}
+
+.newsletter-links {
+  margin-top: 20px;
+}
+
+.newsletter-links p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.newsletter-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.newsletter-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.newsletter-links li:last-child {
+  margin-right: 0;
+}
+
+.newsletter-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.newsletter-links a:hover {
+  text-decoration: underline;
+}

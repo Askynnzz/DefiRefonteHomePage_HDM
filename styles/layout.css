@@ -72,7 +72,7 @@ nav {
 }
 
 .navbar-logo {
-  max-height: 150px; /* Ajustez la valeur selon vos besoins */
+  max-height: 150px; 
 }
 
 .navbar-item:hover {
@@ -87,7 +87,7 @@ nav {
 
 
 
-/* Ajoutez ces styles pour le dropdown menu */
+/* dropdown menu incomplet */
 
 .dropdown-menu {
   position: absolute;
@@ -166,7 +166,7 @@ nav {
 
 
 
-/* Footer */
+
 /* Footer */
 footer {
   background-color: #000;
